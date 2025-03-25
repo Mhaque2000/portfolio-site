@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+  background-color: rgb(22, 25, 36);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-size: 22px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  color: #d7dce7;
+}
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed; /* Makes the navbar stick to the top */
+  /* top: 0; Aligns it to the top of the viewport */
+  /* left: 0; Ensures it spans from the left edge */
+  width: 100%; /* Makes it full-width */
+  z-index: 1000; /* Keeps it above other content */
+}
+.nav-content {
+  width: 70%;
+  padding: 0.5em;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0.5px 2px rgb(116, 126, 128);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-icon {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+}
+.nav-icon img {
+  margin-right: 16px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.nav-tab a {
+  margin-right: 2em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page,
+.about-page,
+.projects,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  box-shadow: 0 0.5px 2px rgb(116, 126, 128);
+  margin-top: 150px;
+  padding: 50px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-page-summery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page-summery h1,
+.about-page h1,
+.education h1,
+.technologies h1,
+.experience h1,
+.hobbies h1,
+.projects h1 {
+  margin-bottom: 30px;
+  background: linear-gradient(to right, rgb(99, 207, 215), rgb(36, 110, 207));
+  background-clip: text;
+  color: transparent;
+  font-size: 75px;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+}
